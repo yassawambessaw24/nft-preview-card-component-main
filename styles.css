@@ -1,0 +1,157 @@
+:root {
+    --primary-clr-soft-blue: hsl(215, 51%, 70%);
+    --primary-clt-cyan: hsl(178, 100%, 50%);
+
+    --neutral-clr-very-dark-blue-main: hsl(217, 54%, 11%);
+    --neutral-clr-very-dark-blue-shadow: hsl(220, 60%, 8%);
+    --neutral-clr-very-dark-blue-card: hsl(216, 50%, 16%);
+    --neutral-clr-very-dark-blue-line: hsl(215, 32%, 27%);
+    --neutral-clr-white: hsl(0, 0%, 100%);
+
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-bold: 600;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+}
+
+body {
+    background-color: var(--neutral-clr-very-dark-blue-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    background-color: var(--neutral-clr-very-dark-blue-card);
+    padding: 1.5rem;
+    width: 355px;
+    border-radius: 1rem;
+    box-shadow: 0 0 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card .main-image {
+    position: relative;
+}
+
+.card .main-image div {
+    position: absolute;
+    top: 0;
+    background-color: hsl(178, 100%, 50%, 60%);
+    border-radius: 0.5rem;
+    width: 100%;
+    height: calc(100% - 1%);
+    z-index: 999;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+}
+
+.card .main-image div img {
+    position: absolute;
+    left: 43%;
+    top: 43%;
+    transform: translate(-50% -50%);
+}
+
+.card .main-image div:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+h3 {
+    color: var(--neutral-clr-white);
+    margin-top: 1.5rem;
+    font-weight: var(--fw-bold);
+    font-size: 1.3rem;
+}
+
+h3:hover {
+    cursor: pointer;
+    color: var(--primary-clt-cyan);
+    font-weight: var(--fw-bold);
+}
+
+.equilibrium-disc {
+    color: var(--primary-clr-soft-blue);
+    font-size: 1.125rem;
+    font-weight: var(--fw-light);
+    margin-top: 1.1rem;
+}
+
+
+.flex-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.ETH-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    color: var(--primary-clt-cyan);
+    font-weight: var(--fw-bold);
+}
+
+.ETH-price > img {
+    width: 11px; 
+    height: 18px;
+}
+
+.deadline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    color: var(--primary-clr-soft-blue);
+    font-weight: var(--fw-light);
+}
+
+.deadline > img {
+    width: 17px;
+    height: 17px;
+}
+
+hr {
+   border: 1px solid var(--neutral-clr-very-dark-blue-line);
+   margin-top: 1rem;
+}
+
+.creator {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+    margin-top: 1rem;
+}
+
+.creator > img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid var(--neutral-clr-white);
+}
+
+.creator > p:hover {
+    color: var(--primary-clr-soft-blue);
+    cursor: pointer;
+}
+
+ .jules {
+    color: var(--neutral-clr-white);
+ }
+
+span {
+    color: var(--primary-clr-soft-blue);
+}
